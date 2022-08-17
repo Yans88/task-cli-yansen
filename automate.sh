@@ -15,7 +15,7 @@ else
     echo "https://www.linkedin.com/in/$3" >> linkedin.txt 
     echo "My username: $1" >> about_this_laptop.txt
     echo "With host: ${NAME}" >> about_this_laptop.txt 
-    # ping -c 3 google.com > internet_connection.txt
+    ping -c 3 google.com > internet_connection.txt
     curl https://gist.githubusercontent.com/tegarimansyah/e91f335753ab2c7fb12815779677e914/raw/94864388379fecee450fde26e3e73bfb2bcda194/list%2520of%2520my%2520friends.txt > list_of_my_friends.txt
     mkdir -p "${FOLDER}"/{my_friends,my_system_info,about_me}
     mv list_of_my_friends.txt "${FOLDER}"/my_friends
